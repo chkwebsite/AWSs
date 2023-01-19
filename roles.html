@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/sites_styles.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+    <title>AWS</title>
+    <link rel="icon" href="assets/images/site_logo.png">
+    <style>
+        .asdf{
+            display: none;
+        }
+        .asd{
+            display: block !important;
+        }
+        .element {
+  background: #eee;
+  width: 200px;
+  height: 40px;
+  padding: 20px 20px 0;
+  text-align: center;
+  margin: 5px 0;
+}
+    </style>
+</head>
+<body class="body-bg bg-light top-warper">
+    <!-- body-bg bg-light top-warper -->
+    <!-- JAI MAA  -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- TOP HEADER START -->
+            <div class="col-sm-12 p-0 top-header-bg">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                      <ul class="navbar-nav top-header">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"> 
+                            <i class="fa-solid fa-house-user spinner-grow" title="Home"></i> 
+                            <span>Home</span> 
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav top-header float-end">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-facebook spinner-grow" title="Facebook"></i>
+                          </a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-twitter spinner-grow" title="Twitter"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-youtube spinner-grow" title="YouTube"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                <i class="fa-solid fa-user-gear" title="User Setting"></i>
+                            </a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                      <h3 class="offcanvas-title">User Setting</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <hr>
+                        <div>
+                            <h4 class="alllabel">Color Theme</h4>
+                            <button type="button" class="btn btn-link default-color" title="Default"><i class="fa fa-circle default-color "></i></button>
+                            <button type="button" class="btn btn-link black-color" title="Black"><i class="fa fa-circle black-color "></i></button>
+                            <button type="button" class="btn btn-link red-color" title="Red"><i class="fa fa-circle text-red"></i></button>
+                        <button type="button" class="btn btn-link pink-color" title="Pink"><i class="fa fa-circle text-pink"></i></button>
+                        <button type="button" class="btn btn-link orange-color" title="Orange"> <i class="fa fa-circle text-orange"></i></button>
+                        <button type="button" class="btn btn-link bluegreen-color" title="Blue Green"><i class="fa fa-circle text-bluegreen"></i></button>
+                        <button type="button" class="btn btn-link navyblue-color" title="Navy Blue"><i class="fa fa-circle text-navyblue"></i></button>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4 class="alllabel">Menu Theme</h4>
+                            <div class="d-grid">
+                                <!-- <button type="button" class="btn btn-primary btn-block">Full-Width Button</button> -->
+                                <div class="btn-group">
+                                    <button type="button" id="top_menu" class="btn btn-primary">Top Menu</button>
+                                    <button type="button" id="side_menu" class="btn btn-info">Side Menu</button>
+                                  </div>
+                              </div>
+                        </div>
+                        <hr>
+                    </div>
+                  </div>
+            </div>
+            <!-- TOP HEADER END -->
+            <!-- lOGO HEADER START -->
+            <div class="col-sm-12 p-0 bg-light shadow h-fix">
+                <nav id="top_m" class="navbar navbar-expand-lg navbar-light bg-light shadow p-0">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img class="img-height" src="assets/images/site_logo.png">
+                    </a>
+                      <button class="navbar-toggler collapsed s_m" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                        <div class="hamburger-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                      </button>
+                      <button type="button" class="btn btn-link d-none">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse side-user " id="navbar-content">
+                        <ul class="navbar-nav me-auto ps-5 top-m appends">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="dashboard.html">
+                                <!-- <i class="fa-solid fa-house"></i> -->
+                                <i class="bi bi-speedometer"></i>
+                                <p>Dashboard</p> </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                              <i class="bi bi-person-exclamation"></i>
+                                <p>Administrator</p><span></span></a>
+                            <ul class="dropdown-menu shadow">
+                              
+                              <li><a class="dropdown-item" href="users.html">
+                                <i class="bi bi-circle"></i>
+                                <p>Users</p>
+                              </a></li>
+                              <li><a class="dropdown-item" href="roles.html">
+                                <i class="bi bi-circle"></i>
+                                <p>Roles</p>
+                              </a></li>
+                              
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                              <i class="bi bi-input-cursor "></i>
+                                <p>Analytics</p><span></span></a>
+                            <ul class="dropdown-menu shadow">
+                              
+                              <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <i class="bi bi-circle"></i><p> Agent Report</p>
+                                    <span></span>
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                  <li><a class="dropdown-item" href="AgentSummary.html"><i class="bi bi-circle"></i><p> Agent Summary</p></a></li>
+                                  <li><a class="dropdown-item" href="AgentCallDetails.html"> <i class="bi bi-circle"></i><p>Agent Call Details</p></a></li>
+                                </ul>
+                              </li>
+                              <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <i class="bi bi-circle"></i><p> Queue Report</p>
+                                    <span></span>
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                  <li><a class="dropdown-item" href="InboundCallSummary.html"><i class="bi bi-circle"></i><p> Inbound Call Summary</p></a></li>
+                                  <li><a class="dropdown-item" href="OutboundCallSummary.html"> <i class="bi bi-circle"></i><p>Outbound Call Summary</p></a></li>
+                                </ul>
+                              </li>
+                              </ul>
+                          </li>
+                          
+                        </ul>
+                        <ul class="navbar-nav d-flex justify-content-end ps-5">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"> 
+                                  <i class="fa-solid fa-elevator"></i>
+                                  <span class="u-name">Admin User</span> 
+                                </a>
+                                <ul class="dropdown-menu mt-2 dropdown-menu-end dropdown-m user-in" style="float: left;">
+                                    <li class="text-center">
+                                        <div class="user-details">
+                                            <div>
+                                            <img src="assets/images/site_logo.png" style="width: 100%;">
+                                        </div>
+                                            <p class="mb-0">Admin User</p>
+                                            <span>Administrator</span>
+                                            <!-- <button type="button" class="btn btn-primary float-start p-1">Profile</button> -->
+                                            <a href="index.html" class="btn btn-danger rounded-5 w-75 p-1">Logout</a>
+                                        </div>
+                                    </li>
+                                  </ul>
+                              </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                
+            </div>
+            <!-- lOGO HEADER END -->
+        </div>
+    </div>
+    <!-- Body Container START -->
+    <div class="site-fluid">
+        <!-- SIDENAV START  -->
+            <div class="sidebars s-fix bg-gradient rounded1">
+                <div class="user-info p-2">
+                    <span class="sh-sm">A.R</span>
+                    <span class="sh-lg">Application Root</span>
+                    <a class="side-nav-togg side-togg-b float-end text-white-50 arrows-right" id="side-collapse" href="#"> <span></span> </a>
+                </div>
+                <nav id="side_nav"></nav>
+            </div>
+            <!-- SIDENAV END  -->
+            <!-- CONTENT WARPER START  -->
+            <div class="content-warper">
+                <div class="container-fluid py-3">
+                    <section class="content">
+                      
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="ab page-header  " data-aos="flip-up">
+                                    <i class="fa-solid fa-hand-point-right fa-2x"></i> Roles
+                                    <!-- <button type="button" class="btn btn-link p-0 float-end" title="Filter" data-bs-toggle="offcanvas" data-bs-target="#filter"> -->
+                                        <!-- <i class="bi bi-funnel-fill" style="font-size:19px;"></i> -->
+                                    <!-- </button> -->
+                                    </div>
+                                <div class="offcanvas offcanvas-end bg-gradient" id="filter">
+                                    <div class="offcanvas-header border-bottom py-0">
+                                      <h1 class="offcanvas-title text-white-50">
+                                        <i class="bi bi-funnel-fill"></i> Filters</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form  class="was-validated">
+                                            <div class="form-floating label-f-s my-3">
+                                                <input type="text" class="form-control" id="uname" placeholder=" Designation Name" name="uname" required>
+                                               <label  class="form-label">Designation Name:</label>
+                                              </div>
+                                              <button class="btn btn-success float-end rounded-5" type="button" data-bs-dismiss="offcanvas">Filter
+                                                <i class="bi bi-funnel-fill spinner-grow"></i>
+                                              </button>
+                                        </form>
+                                    </div>
+                                  </div>
+                            </div>
+<!-- ADD USERS START  -->
+
+<div class="offcanvas offcanvas-end bg-gradient" id="add_role">
+    <div class="offcanvas-header border-bottom py-0">
+      <h1 class="offcanvas-title text-white-50"><i class="bi bi-person-rolodex"></i> Add Role</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body"> 
+        <form  class="was-validated">
+            <div class="form-floating label-f-s my-3">
+                <input type="text" class="form-control" id="uname" placeholder=" Designation Name" name="uname" required>
+               <label  class="form-label">Designation Name:</label>
+              </div>
+              <button class="btn btn-success float-end rounded-5" type="button" data-bs-dismiss="offcanvas">Submit
+                <i class="bi bi-person-rolodex spinner-grow"></i>
+              </button>
+        </form>
+    </div>
+  </div>
+                            <div class="col-sm-12">
+                                <div class="card" data-aos="flip-left">
+                                  <div class="card-header bg-gradient text-white-50"><span style="position: relative;top: 6px;"> Roles Details</span>
+                                    <button type="button" class="btn btn-link text-white text-decoration-none float-end" data-bs-toggle="offcanvas" data-bs-target="#add_role">
+                                        <i class="bi bi-person-rolodex spinner-grow"></i> Add Roles
+                                    </button>
+                                    <div class="dropdown float-end">
+                                        <button type="button" class="btn btn-link text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                                            <i class="bi bi-cloud-download spinner-grow"></i> Export
+                                        </button>
+                                        <ul class="dropdown-menu mt-1 bg-gradient">
+                                          <li><a class="dropdown-item border-bottom" href="#">
+                                            <i class="bi bi-file-earmark-pdf-fill" style="position: relative;top: 0px;"></i> PDF
+                                          </a></li>
+                                          <li><a class="dropdown-item border-bottom" href="#">
+                                            <i class="bi bi-file-earmark-excel-fill" style="position: relative;top: 0px;"></i> Excel
+                                          </a></li>
+                                          <li><a class="dropdown-item border-bottom" href="#">
+                                            <i class="bi bi-file-earmark-spreadsheet-fill" style="position: relative;top: 0px;"></i> CVC
+                                          </a></li>
+                                        </ul>
+                                      </div>
+                                      
+                                  </div>
+
+
+
+
+
+                                  <div class="card-body">
+                                    <div class="table-container-data" style="overflow-y: auto;overflow-x: hidden;">
+                                      <table id="datafh" class="table table-bordered">
+                                        <thead>
+                                          <tr>
+                                            <th style="width: 60px;">#</th>
+                                            <th style="width: 100px;">Actions</th>
+                                            <th>Designation</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>
+                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                            </td>
+                                            <td>IT Manager</td>
+                                          </tr>
+                                            <tr>
+                                              <td>2</td>
+                                              <td>
+                                                  <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                  <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                </td>
+                                                <td>Asst. Manager</td>
+                                            </tr>
+                                            <tr>
+                                              <td>3</td>
+                                              <td>
+                                                  <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                  <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                </td>
+												<td>Sr. Manager</td>
+                                            </tr>
+                                            <tr>
+                                              <td>4</td>
+                                              <td>
+                                                  <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                  <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                </td>
+                                                <td>Solution Architect</td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- CONTENT WARPER END  -->
+        </div>
+        <!-- CONTENT WARPER END  -->
+        <!-- FOOTER START -->
+    <footer class="main-footer px-3">
+        <strong>Copyright &copy; 2022-2023 <a href="#">XYZ</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <!-- <b>Version</b> 3.1.0 -->
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- JAI MAA  -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+    <!-- <script type="text/javascript">
+      $(window).bind('resize', function(){
+        if($(window).width()<500){
+          $('img').each(function(){
+        $(this).css('width', '100%')
+      })
+        }else{
+          $('img').each(function(){
+        $(this).css('width', 'auto')
+      })
+        }
+      })
+      
+    </script> -->
+    
+
+    <script type="text/javascript">
+              AOS.init({
+  duration: 1000
+});
+        $(document).ready(function(){
+          $('#datafh').DataTable();
+          $('#datafh-2').DataTable();
+          $('#tbl_myModal-1').DataTable();
+            if($('body').attr('class','body-bg bg-light side-warper')){
+                // alert('asd');
+                $(".appends").clone().appendTo("#side_nav")
+            }
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $('.h-fix').addClass('h-fixed')
+                    $('.s-fix').addClass('s-fixed')
+                }
+                else{
+                    $('.h-fix').removeClass('h-fixed')
+                    $('.s-fix').removeClass('s-fixed')
+                }
+            })
+            
+        })
+//         $('.wrapper').on('click', '.remove', function() {
+//   $('.remove').closest('.wrapper').find('.element').not(':first').last().remove();
+// });
+// $('.wrapper').on('click', '.clone', function() {
+//   $('.clone').closest('.wrapper').find('.element').first().clone().appendTo('.results');
+// });
+    </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            document.addEventListener('click',function(e){
+                if(e.target.classList.contains('hamburger-toggle')){
+                    e.target.children[0].classList.toggle('active');
+                }
+            });
+            // ===================== TOP & SIDE START ======================================== 
+            
+                 $('body').addClass(sessionStorage.ajtop);
+                $('#top_menu').click(function(){
+                    sessionStorage.ajsbc = 'body-bg bg-light top-warper';
+                if(sessionStorage.ajtop != 'top-warper'){
+                    if($('body').hasClass('side-warper')){
+                    $('body').removeClass('side-warper')
+                    $('body').addClass('top-warper', true)
+                    sessionStorage.ajtop = 'top-warper';
+                    sessionStorage.ajside = '';                  
+                    }else{
+                    $('body').removeClass('top-warper', false)
+                    sessionStorage.ajtop = '';
+                }
+            }
+                });                
+            $('body').addClass(sessionStorage.ajside);
+            $('body').attr('class',sessionStorage.ajsbc)
+            $('#side_menu').click(function(){
+                if(sessionStorage.ajside != 'side-warper'){
+                    if($('body').hasClass('top-warper')){
+                    $('body').removeClass('top-warper')
+                    $('body').addClass('side-warper', true)
+                    sessionStorage.ajside = 'side-warper';
+                    sessionStorage.ajsbc = 'body-bg bg-light side-warper';
+                    sessionStorage.ajtop = '';
+                }
+                else{
+                    $('body').removeClass('side-warper', false);
+                    sessionStorage.ajside = '' ;
+                }
+                }
+
+                
+            });
+           // ===================== TOP & SIDE END ======================================== 
+           
+           $('.sidebars').addClass(sessionStorage.ajslg)
+            $('.content-warper').addClass(sessionStorage.ajcwlg)
+            $('.main-footer').addClass(sessionStorage.ajfoot)
+            $('#side-collapse').click(function(){
+                if(sessionStorage.ajslg != 'sidebars-lg'){
+                  $('.sidebars').removeClass('sidebars-lg', true)
+                    $('.sidebars').addClass('sidebars-lg', true)
+                    sessionStorage.ajslg = 'sidebars-lg'
+                }else{
+                    $('.sidebars').removeClass('sidebars-lg', false)
+                    sessionStorage.ajslg = ''
+                }
+                if(sessionStorage.ajcwlg != 'content-warper-lg'){
+                  $('.content-warper').removeClass('content-warper-lg', true)
+                    $('.content-warper').addClass('content-warper-lg', true)
+                    sessionStorage.ajcwlg = 'content-warper-lg'
+                }else{
+                    $('.content-warper').removeClass('content-warper-lg', false)
+                    sessionStorage.ajcwlg = ''
+                }
+                if(sessionStorage.ajfoot != 'main-footer-lg'){
+                  $('.main-footer').removeClass('main-footer-lg', true)
+                    $('.main-footer').addClass('main-footer-lg', true)
+                    sessionStorage.ajfoot = 'main-footer-lg'
+                }else{
+                    $('.main-footer').removeClass('main-footer-lg', false)
+                    sessionStorage.ajfoot = ''
+                }
+                // $('.sidebars').toggleClass('sidebars-lg')
+                //$('.content-warper').toggleClass('content-warper-lg')
+                //$('.main-footer').toggleClass('main-footer-lg')
+                $('.side-nav-togg').toggleClass('arrows-left')
+                $('.sidebars').addClass('sidebars-hover');
+                $('.sidebars nav ul li a p').show();
+                
+            });
+            $('.sidebars').hover(function(){
+                $('.sidebars nav ul li a i').removeClass('spinner-grow');
+               if( $('.sidebars').hasClass('sidebars-lg') || $('.sidebars').hasClass('sidebars-hover')){
+                $('.sidebars-hover').removeClass('sidebars-hover')
+                
+               }
+               else{
+                $('.sidebars').addClass('sidebars-hover');
+                $('.sidebars nav ul li a i').toggleClass('spinner-grow');
+               }
+            })
+            $('.side-nav-togg-top').click(function(){
+                $('.sidebars').toggleClass('sidebars-lg')
+                $('.content-warper').toggleClass('content-warper-lg')
+            });
+            $('.s_m').click(function(){
+                $('.sidebars').toggleClass('sidebars-lg')
+                $('.content-warper').toggleClass('content-warper-lg')
+            })
+        })
+    </script>
+     <script>
+        jQuery(function () {
+            initChangeStyleSheet();
+        });
+
+        function initChangeStyleSheet() {
+            var folder_path = 'assets/css/theme-color/';
+            var selector = 'head link[href$="color.css"]';
+            var color = sessionStorage.getItem('ajwebskin');
+
+
+            if (color == null) {
+                selector = 'head link[href$="color.css"]';
+            }
+            else {
+                $(selector).attr('href', folder_path +  color );
+            }
+            $('.default-color').click(function () {
+                $(selector).attr('href', folder_path + 'color.css');
+                sessionStorage.setItem('ajwebskin', 'color.css');
+            });
+            $('.black-color').click(function () {
+                $(selector).attr('href', folder_path + 'black-color.css');
+                sessionStorage.setItem('ajwebskin', 'black-color.css');
+            });
+            $('.red-color').click(function () {
+                $(selector).attr('href', folder_path + 'red-color.css');
+                sessionStorage.setItem('ajwebskin', 'red-color.css');
+            });
+            $('.pink-color').click(function(){
+                $(selector).attr('href', folder_path + 'pink-color.css');
+                sessionStorage.setItem('ajwebskin', 'pink-color.css')
+            })
+            $('.orange-color').click(function () {
+                $(selector).attr('href', folder_path + 'orange-color.css');
+                sessionStorage.setItem('ajwebskin', 'orange-color.css');
+            });
+            $('.bluegreen-color').click(function () {
+                $(selector).attr('href', folder_path + 'bluegreen-color.css');
+                sessionStorage.setItem('ajwebskin', 'bluegreen-color.css');
+
+            });
+            $('.navyblue-color').click(function () {
+                $(selector).attr('href', folder_path + 'navyblue-color.css');
+                sessionStorage.setItem('ajwebskin', 'navyblue-color.css');
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // jQuery(function ($){
+                                    
+                $(".sidebars nav ul a")
+                    .click(function (e) {
+                        var link = $(this);
+
+                        var item = link.parent("li");
+
+                        if (item.hasClass("active")) {
+                            item.addClass("active").children("a").removeClass("active");
+                        } else {
+                            item.addClass("active").children("a").addClass("active");
+                        }
+
+                        if (item.children("ul").length > 0) {
+                            var href = link.attr("href");
+                            link.attr("href", "#");
+                            setTimeout(function () {
+                                link.attr("href", href);
+                            }, 300);
+                            e.preventDefault();
+                        }
+                    })
+                    .each(function () {
+                        var link = $(this);
+                        if (link.get(0).href === location.href) {
+                            link.addClass("active").parents("li").addClass("active");
+                            return false;
+                        }
+                    });
+            });
+    </script>
+        <script type="text/javascript">
+      
+          $(document).ready(function() {
+              $(window).on("contextmenu",function(e){
+                 return false;
+              }); 
+          }); 
+           document.onkeydown = function (e) {
+              e = e || window.event;//Get event
+              if (e.ctrlKey) {
+                  var c = e.which || e.keyCode;//Get key code
+                  switch (c) {
+                      case 83://Block Ctrl+S
+                      case 87://Block Ctrl+W --Not work in Chrome
+                      case 73://Block Ctrl+I
+                      case 67: //Block Ctrl+C
+                          e.preventDefault();     
+                          e.stopPropagation();
+                      break;
+                  }
+              }
+          };
+          
+                document.onkeydown = function(e) {
+          if(event.keyCode == 123) {
+          return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+          return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+          return false;
+          }
+          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+          return false;
+          }
+          }
+              </script>
+</body>
+</html>

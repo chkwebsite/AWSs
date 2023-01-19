@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/sites_styles.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+    <title>AWS</title>
+    <link rel="icon" href="assets/images/site_logo.png">
+    <style>
+        .asdf{
+            display: none;
+        }
+        .asd{
+            display: block !important;
+        }
+        .element {
+  background: #eee;
+  width: 200px;
+  height: 40px;
+  padding: 20px 20px 0;
+  text-align: center;
+  margin: 5px 0;
+}
+    </style>
+</head>
+<body class="body-bg bg-light top-warper">
+    <!-- body-bg bg-light top-warper -->
+    <!-- JAI MAA  -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- TOP HEADER START -->
+            <div class="col-sm-12 p-0 top-header-bg">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                      <ul class="navbar-nav top-header">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"> 
+                            <i class="fa-solid fa-house-user spinner-grow" title="Home"></i> 
+                            <span>Home</span> 
+                          </a>
+                        </li>
+                       
+                      </ul>
+                      <ul class="navbar-nav top-header float-end">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-facebook spinner-grow" title="Facebook"></i>
+                          </a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-twitter spinner-grow" title="Twitter"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa-brands fa-youtube spinner-grow" title="YouTube"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                <i class="fa-solid fa-user-gear" title="User Setting"></i>
+                            </a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                      <h3 class="offcanvas-title">User Setting</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <hr>
+                        <div>
+                            <h4 class="alllabel">Color Theme</h4>
+                            <button type="button" class="btn btn-link default-color" title="Default"><i class="fa fa-circle default-color "></i></button>
+                            <button type="button" class="btn btn-link black-color" title="Black"><i class="fa fa-circle black-color "></i></button>
+                        <button type="button" class="btn btn-link red-color" title="Red"><i class="fa fa-circle text-red"></i></button>
+                        <button type="button" class="btn btn-link pink-color" title="Pink"><i class="fa fa-circle text-pink"></i></button>
+                        <button type="button" class="btn btn-link orange-color" title="Orange"> <i class="fa fa-circle text-orange"></i></button>
+                        <button type="button" class="btn btn-link bluegreen-color" title="Blue Green"><i class="fa fa-circle text-bluegreen"></i></button>
+                        <button type="button" class="btn btn-link navyblue-color" title="Navy Blue"><i class="fa fa-circle text-navyblue"></i></button>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4 class="alllabel">Menu Theme</h4>
+                            <div class="d-grid">
+                                <!-- <button type="button" class="btn btn-primary btn-block">Full-Width Button</button> -->
+                                <div class="btn-group">
+                                    <button type="button" id="top_menu" class="btn btn-primary">Top Menu</button>
+                                    <button type="button" id="side_menu" class="btn btn-info">Side Menu</button>
+                                  </div>
+                              </div>
+                        </div>
+                        <hr>
+                    </div>
+                  </div>
+            </div>
+            <!-- TOP HEADER END -->
+            <!-- lOGO HEADER START -->
+            <div class="col-sm-12 p-0 bg-light shadow h-fix">
+                <nav id="top_m" class="navbar navbar-expand-lg navbar-light bg-light shadow p-0">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img class="img-height" src="assets/images/site_logo.png">
+                    </a>
+                      <button class="navbar-toggler collapsed s_m" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                        <div class="hamburger-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                      </button>
+                      <button type="button" class="btn btn-link d-none">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse side-user " id="navbar-content">
+                        <ul class="navbar-nav me-auto ps-5 top-m appends">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dashboard.html">
+                                <!-- <i class="fa-solid fa-house"></i> -->
+                                <i class="bi bi-speedometer"></i>
+                                <p>Dashboard</p> </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                              <i class="bi bi-person-exclamation"></i>
+                                <p>Administrator</p><span></span></a>
+                            <ul class="dropdown-menu shadow">
+                              
+                              <li><a class="dropdown-item" href="users.html">
+                                <i class="bi bi-circle"></i>
+                                <p>Users</p>
+                              </a></li>
+                              <li><a class="dropdown-item" href="roles.html">
+                                <i class="bi bi-circle"></i>
+                                <p>Roles</p>
+                              </a></li>
+                              
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                              <i class="bi bi-input-cursor "></i>
+                                <p>Analytics</p><span></span></a>
+                            <ul class="dropdown-menu shadow">
+                              
+                              <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <i class="bi bi-circle"></i><p> Agent Report</p>
+                                    <span></span>
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                  <li><a class="dropdown-item" href="AgentSummary.html"><i class="bi bi-circle"></i><p> Agent Summary</p></a></li>
+                                  <li><a class="dropdown-item" href="AgentCallDetails.html"> <i class="bi bi-circle"></i><p>Agent Call Details</p></a></li>
+                                </ul>
+                              </li>
+                              <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <i class="bi bi-circle"></i><p> Queue Report</p>
+                                    <span></span>
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                  <li><a class="dropdown-item" href="InboundCallSummary.html"><i class="bi bi-circle"></i><p> Inbound Call Summary</p></a></li>
+                                  <li><a class="dropdown-item" href="OutboundCallSummary.html"> <i class="bi bi-circle"></i><p>Outbound Call Summary</p></a></li>
+                                </ul>
+                              </li>
+                              </ul>
+                          </li>
+                          
+                        </ul>
+                        <ul class="navbar-nav d-flex justify-content-end ps-5">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"> 
+                                  <i class="fa-solid fa-elevator"></i>
+                                  <span class="u-name">Admin User</span> 
+                                </a>
+                                <ul class="dropdown-menu mt-2 dropdown-menu-end dropdown-m user-in" style="float: left;">
+                                  <li class="text-center">
+                                      <div class="user-details">
+                                          <div>
+                                          <img src="assets/images/site_logo.png" style="width: 100%;">
+                                      </div>
+                                          <p class="mb-0">Admin User</p>
+                                          <span>Administrator</span>
+                                          <!-- <button type="button" class="btn btn-primary float-start p-1">Profile</button> -->
+                                          <a href="index.html" class="btn btn-danger rounded-5 w-75 p-1">Logout</a>
+                                      </div>
+                                  </li>
+                                </ul>
+                              </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                
+            </div>
+            <!-- lOGO HEADER END -->
+        </div>
+    </div>
+    <!-- Body Container START -->
+    <div class="site-fluid">
+        <!-- SIDENAV START  -->
+            <div class="sidebars s-fix bg-gradient rounded1">
+                <div class="user-info p-2">
+                    <span class="sh-sm">A.R</span>
+                    <span class="sh-lg">Application Root</span>
+                    <a class="side-nav-togg side-togg-b float-end text-white-50 arrows-right" id="side-collapse" href="#"> <span></span> </a>
+                </div>
+                <nav id="side_nav"></nav>
+            </div>
+            <!-- SIDENAV END  -->
+            <!-- CONTENT WARPER START  -->
+            <div class="content-warper">
+                <div class="container-fluid py-3">
+                    <section class="content">
+                      
+                        <div class="row">
+                          
+                            <div class="col-sm-12 mb-3">
+                              <!-- <div class="card">
+                                    <div class="card-body"> -->
+                                      <nav>
+                                        <div class="nav nav-tabs mb-3 border-bottom-0" id="nav-tab" role="tablist" style="flex-wrap: nowrap;">
+                                          <button class="nav-link ml-3 w-50 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="margin-left: 15px;">
+                                            <span> Agent Insights</span></button>
+                                          <button class="nav-link w-50" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="margin-right: 15px;">
+                                            <span> Queue Insights</span></button>
+                                        </div>
+                                      </nav>
+                                      <div class="tab-content p-3" id="nav-tabContent">
+                                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                          <div class="row">
+                                            <div class="col-sm-12 p-0 five-tiles">
+                                              <div class="d-flex">
+                                                <div class="five-tiles-one" data-aos="flip-left">
+                                                  <div class="flex-grow-1">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-success">
+                                                          <div class="inner bg-bob">
+                                                              <h3>146</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">Logged</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-solid fa-arrow-right-to-bracket ion"></i>
+                                                              
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one" data-aos="flip-left">
+                                                  <div class="flex-grow-1">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-warning">
+                                                          <div class="inner bg-bob">
+                                                              <h3>12</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">Reserved</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-researchgate ion"></i>
+                                                              
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-dark">
+                                                          <div class="inner bg-bob">
+                                                              <h3>75</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">Available</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-solid fa-user-astronaut ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-danger">
+                                                          <div class="inner bg-bob">
+                                                              <h3>43</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">Talking</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-teamspeak ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-info">
+                                                          <div class="inner bg-bob">
+                                                              <h3>28</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">Not Ready</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-digital-ocean ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent missed more calls than the threshold (2 calls)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-1">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"><span title="70 Agent">70</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent exceeded lunch break threshold (30 minutes)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-2">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"><span title="60 Agent">60</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent exceeded the total short break threshold (30 minutes)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-3">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%"><span title="25 Agent">25</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent exceeded maximum handle time per call threshold (10 minutes)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-4">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"><span title="50 Agent">50</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent below minimum agent efficiency % (30%)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-5">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%"><span title="65 Agent">65</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent below minimum agent occupancy % (40%)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-6">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"><span title="40 Agent">40</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Agent exceeded Maximum after call work (ACW) time (5 minutes)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-7">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"><span title="80 Agent">80</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-gradient text-white-50">Top 10 Agent Summary</div>
+                                              <div class="card-body">
+                                                <div class="table-container-data">
+                                                  <table id="datafh" class="table table-bordered">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>#</th>
+                                                        <!-- <th>Actions</th> -->
+                                                        <th>Name</th>
+                                                        <th>Duration</th>
+                                                        <th>Answered</th>
+                                                        <th>Abandoned</th>
+                                                        <th>Total Talk</th>
+                                                        <th>Avg Talk</th>
+                                                        <th>Avg Hold</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <!-- <td>
+                                                          <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                          <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                          <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                        </td> -->
+                                                        <td>Martin</td>
+                                                        <td>54:06</td>
+                                                        <td>11</td>
+                                                        <td>0</td>
+                                                        <td>24:01</td>
+                                                        <td>04:46</td>
+                                                        <td>01:09</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>2</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Charles</td>
+                                                        <td>20:01</td>
+                                                        <td>14</td>
+                                                        <td>5</td>
+                                                        <td>09:06</td>
+                                                        <td>01:30</td>
+                                                        <td>00:34</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>3</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Henry</td>
+                                                        <td>1:09:57</td>
+                                                        <td>89</td>
+                                                        <td>13</td>
+                                                        <td>59:58</td>
+                                                        <td>01:08</td>
+                                                        <td>03:56</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>4</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Robert</td>
+                                                        <td>34:10</td>
+                                                        <td>18</td>
+                                                        <td>4</td>
+                                                        <td>19:20</td>
+                                                        <td>01:40</td>
+                                                        <td>01:20</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>5</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Julia</td>
+                                                        <td>43:18</td>
+                                                        <td>4</td>
+                                                        <td>0</td>
+                                                        <td>23:43</td>
+                                                        <td>10:43</td>
+                                                        <td>01:08</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>6</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                            <td>Cristina</td>
+                                                        <td>1:00:45</td>
+                                                        <td>54</td>
+                                                        <td>11</td>
+                                                        <td>40:41</td>
+                                                        <td>02:55</td>
+                                                        <td>03:57</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>7</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                        <td>Maryia</td>
+                                                        <td>19:32</td>
+                                                        <td>7</td>
+                                                        <td>0</td>
+                                                        <td>07:09</td>
+                                                        <td>02:32</td>
+                                                        <td>00:51</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>8</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                            <td>Peter</td>
+                                                        <td>25:56</td>
+                                                        <td>12</td>
+                                                        <td>6</td>
+                                                        <td>15:41</td>
+                                                        <td>02:06</td>
+                                                        <td>01:06</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>9</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                           <td>Jhon</td>
+                                                        <td>50:12</td>
+                                                        <td>23</td>
+                                                        <td>3</td>
+                                                        <td>34:13</td>
+                                                        <td>01:59</td>
+                                                        <td>01:32</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>10</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                            <td>Andrew</td>
+                                                        <td>49:05</td>
+                                                        <td>18</td>
+                                                        <td>1</td>
+                                                        <td>32:15</td>
+                                                        <td>02:05</td>
+                                                        <td>00:30</td>
+                                                        </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                          <div class="row">
+                                            <div class="col-sm-12 p-0 five-tiles">
+                                              <div class="d-flex">
+                                                <div class="five-tiles-one" data-aos="flip-left">
+                                                  <div class="flex-grow-1">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-success">
+                                                          <div class="inner bg-bob">
+                                                              <h3>230</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">ACD Calls</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-teamspeak ion"></i>
+                                                              
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one" data-aos="flip-left">
+                                                  <div class="flex-grow-1">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-warning">
+                                                          <div class="inner bg-bob">
+                                                              <h3>120</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">ABN Calls</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-napster ion"></i>
+                                                              
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-dark">
+                                                          <div class="inner bg-bob">
+                                                              <h3>98</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">% SL</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-phabricator ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-danger">
+                                                          <div class="inner bg-bob">
+                                                              <h3>20</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">CIQ</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-stumbleupon-circle ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="five-tiles-one">
+                                                  <div class="flex-grow-1" data-aos="flip-left">
+                                                    <div class="tiles">
+                                                      <div class="small-box bg-gradient-info">
+                                                          <div class="inner bg-bob">
+                                                              <h3>50</h3>
+                          
+                                                              <p class="mb-0 block-ellipsis">CSAT</p>
+                                                          </div>
+                                                          <div class="icon">
+                                                            <i class="fa-brands fa-chromecast ion"></i>
+                                                          </div>
+                                                          <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues exceeded maximum abandon rate (20%)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-11">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"><span title="70 Agent">70</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues exceeded maximum ASA (120 seconds)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px;  cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-12">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"><span title="60 Agent">60</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues exceeded maximum handle time per call: (10 minutes)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-13">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%"><span title="25 Agent">25</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues Below the minimum answer rate per queue (70%)
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-14">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"><span title="50 Agent">50</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Callers calling more than threshold (3 calls): List callers
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-15">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%"><span title="65 Agent">65</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Calls exceeded maximum wait time before answer (300 seconds): List calls
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-16">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"><span title="40 Agent">40</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues below minimum daily service level (60%): List queues
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-17">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"><span title="80 Agent">80</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-transparent">
+                                                Queues exceeded the maximum number of not ready agents: List queues
+                                              </div>
+                                              <div class="card-body pt-0">
+                                                    <div class="d-flex justify-content-between" style="position: relative;top: 25px; cursor: pointer;"  data-bs-toggle="modal" data-bs-target="#myModal-18">
+                                                     <div class="p-2 bg-dark text-warning rounded-5">0</div>
+                                                     <div class="p-2 bg-warning text-dark rounded-5">100</div>
+                                                   </div>
+                                                    <div class="progress mb-3">
+                                                     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"><span title="90 Agent">90</span></div>
+                                                     </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                            <div class="card" data-aos="flip-left">
+                                              <div class="card-header bg-gradient text-white-50">Top 5 Queue</div>
+                                              <div class="card-body">
+                                                <div class="table-container-data">
+                                                  <table id="datafh-2" class="table table-bordered">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>#</th>
+                                                        <!-- <th>Actions</th> -->
+                                                        <th>Queue</th>
+                                                        <th>Logged</th>
+                                                        <th>Available</th>
+                                                        <th>Call Offered</th>
+                                                        <th>Call Handled</th>
+                                                        <th>Call Aband</th>
+                                                        <th>In Queue</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <!-- <td>
+                                                          <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                          <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                          <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                        </td> -->
+                                                        <td>Prepaid</td>
+                                                        <td>48</td>
+                                                        <td>40</td>
+                                                        <td>127</td>
+                                                        <td>112</td>
+                                                        <td>15</td>
+                                                        <td>10</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>2</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Postpaid</td>
+                                                        <td>52</td>
+                                                        <td>47</td>
+                                                        <td>102</td>
+                                                        <td>84</td>
+                                                        <td>18</td>
+                                                        <td>11</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>3</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                           <td>Sales</td>
+                                                        <td>78</td>
+                                                        <td>72</td>
+                                                        <td>187</td>
+                                                        <td>162</td>
+                                                        <td>25</td>
+                                                        <td>29</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>4</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                          <td>Enquiry</td>
+                                                           <td>52</td>
+                                                        <td>32</td>
+                                                        <td>82</td>
+                                                        <td>76</td>
+                                                        <td>06</td>
+                                                        <td>10</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>5</td>
+                                                          <!-- <td>
+                                                              <a class="text-success" href="#"><i class="bi bi-file-earmark-plus"></i></a>
+                                                              <a class="text-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                                                              <a class="text-danger" href="#"><i class="bi bi-archive"></i></a>
+                                                            </td> -->
+                                                           <td>HelpDesk</td>
+                                                           <td>75</td>
+                                                        <td>69</td>
+                                                        <td>185</td>
+                                                        <td>142</td>
+                                                        <td>43</td>
+                                                        <td>29</td>
+                                                        </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                          </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- </div>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- CONTENT WARPER END  -->
+        </div>
+        <!-- CONTENT WARPER END  -->
+        <!-- FOOTER START -->
+    <footer class="main-footer px-3">
+        <strong>Copyright &copy; 2022-2023 <a href="#">XYZ</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <!-- <b>Version</b> 3.1.0 -->
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- Modal start  -->
+<div class="modal fade" id="myModal-1">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent missed more calls than the threshold (2 calls)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>No. of missed calls</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>15 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>11 </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>8 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>5 </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-2">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent exceeded lunch break threshold (30 minutes)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>lunch break duration</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>01:05 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>00:56 </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>00:46 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>00:36 </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-3">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent exceeded the total short break threshold (30 minutes)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>Short break duration</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>01:05 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>00:56 </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>00:46 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>00:36 </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-4">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent exceeded maximum handle time per call threshold (10 minutes)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>Call Handle Time</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>01:05 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>00:56 </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>00:46 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>00:36 </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-5">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent below minimum agent efficiency % (30%)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>Agent Efficiency %</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>27 % </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>24 % </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>21 % </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>17 % </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-6">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent below minimum agent occupancy % (40%)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>Agent Occupancy %</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>37 % </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>34 % </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>32 % </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>24 % </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+<!-- Modal start  -->
+<div class="modal fade" id="myModal-7">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Agent exceeded Maximum after call work (ACW) time (5 minutes)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent Name</th>
+                <th>Agent ID</th>
+                 <th>ACW Time</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>1205</td>
+                <td>08:56 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Henry</td>
+                <td>1218</td>
+                <td>07:43 </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Peter</td>
+                <td>1290</td>
+                <td>06:21 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Prita</td>
+                <td>1234</td>
+                <td>05:51 </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+
+
+    <!-- Modal start  -->
+<div class="modal fade" id="myModal-11">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues exceeded maximum abandon rate (20%)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>Abandon %</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>39 %</td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>34 % </td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>29 % </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>25 % </td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-12">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues exceeded maximum ASA (120 seconds)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>ASA (seconds)</th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>141</td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>134</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>123 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>115</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-13">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues exceeded maximum handle time per call: (10 minutes)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>Call Handle Time </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>15:34</td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>14:45</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>12:56 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>11:21</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-14">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues Below the minimum answer rate per queue (70%)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>Answer Rate </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>67 % </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>63 %</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>60 % </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>59 %</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-15">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Callers calling more than threshold (3 calls): List callers</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Caller Name</th>
+                <th>No of calls </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Anderson</td>
+                <td>6 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Brooks</td>
+                <td>4</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Matthews</td>
+                <td>3 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Phillips</td>
+                <td>2</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-16">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Calls exceeded maximum wait time before answer (300 seconds): List calls</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>Wait Time </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Anderson</td>
+                <td>410 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Brooks</td>
+                <td>375</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Matthews</td>
+                <td>338 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Phillips</td>
+                <td>310</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-17">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues below minimum daily service level (60%): List queues</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>SL % </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>52 % </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>55 %</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>57 % </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>59 %</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+
+ <!-- Modal start  -->
+<div class="modal fade" id="myModal-18">
+  <div class="modal-dialog modal-lg" data-aos="flip-left">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Queues exceeded the maximum number of not ready agents: List queues</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container-data">
+          <table id="tbl_myModal-1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Name</th>
+                <th>Not Ready Agent </th>
+                <!--<th>Call Offered</th>
+                <th>Call Handled</th>
+                <th>Call Aband</th>
+                <th>In Queue</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Prepaid</td>
+                <td>16 </td>
+                <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Postpaid</td>
+                <td>12</td>
+               <!--  <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sales</td>
+                <td>9 </td>
+               <!-- <td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Help Desk</td>
+                <td>5</td>
+                <!--<td>05 minutes</td>
+                <td>45 minutes</td>
+                <td>10 minutes</td>
+                <td>05 minutes</td> -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal end  -->
+
+    <!-- JAI MAA  -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript">
+              AOS.init({
+  duration: 1000
+});
+        $(document).ready(function(){
+          $('#datafh').DataTable();
+          $('#datafh-2').DataTable();
+          $('#tbl_myModal-1').DataTable();
+            if($('body').attr('class','body-bg bg-light side-warper')){
+                // alert('asd');
+                $(".appends").clone().appendTo("#side_nav")
+            }
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $('.h-fix').addClass('h-fixed')
+                    $('.s-fix').addClass('s-fixed')
+                }
+                else{
+                    $('.h-fix').removeClass('h-fixed')
+                    $('.s-fix').removeClass('s-fixed')
+                }
+            })
+            
+        })
+//         $('.wrapper').on('click', '.remove', function() {
+//   $('.remove').closest('.wrapper').find('.element').not(':first').last().remove();
+// });
+// $('.wrapper').on('click', '.clone', function() {
+//   $('.clone').closest('.wrapper').find('.element').first().clone().appendTo('.results');
+// });
+    </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            document.addEventListener('click',function(e){
+                if(e.target.classList.contains('hamburger-toggle')){
+                    e.target.children[0].classList.toggle('active');
+                }
+            });
+            // ===================== TOP & SIDE START ======================================== 
+            
+                 $('body').addClass(sessionStorage.ajtop);
+                $('#top_menu').click(function(){ 
+                    sessionStorage.ajsbc = 'body-bg bg-light top-warper';
+                if(sessionStorage.ajtop != 'top-warper'){
+                    if($('body').hasClass('side-warper')){
+                    $('body').removeClass('side-warper')
+                    $('body').addClass('top-warper', true)
+                    sessionStorage.ajtop = 'top-warper';
+                    sessionStorage.ajside = '';                  
+                    }else{
+                    $('body').removeClass('top-warper', false)
+                    sessionStorage.ajtop = '';
+                }
+            }
+                });                
+            $('body').addClass(sessionStorage.ajside);
+            $('body').attr('class',sessionStorage.ajsbc)
+            $('#side_menu').click(function(){
+                if(sessionStorage.ajside != 'side-warper'){
+                    if($('body').hasClass('top-warper')){
+                    $('body').removeClass('top-warper')
+                    $('body').addClass('side-warper', true)
+                    sessionStorage.ajside = 'side-warper';
+                    sessionStorage.ajsbc = 'body-bg bg-light side-warper';
+                    sessionStorage.ajtop = '';
+                }
+                else{
+                    $('body').removeClass('side-warper', false);
+                    sessionStorage.ajside = '' ;
+                }
+                }
+
+                
+            });
+           // ===================== TOP & SIDE END ======================================== 
+           
+           $('.sidebars').addClass(sessionStorage.ajslg)
+            $('.content-warper').addClass(sessionStorage.ajcwlg)
+            $('.main-footer').addClass(sessionStorage.ajfoot)
+            $('#side-collapse').click(function(){
+                if(sessionStorage.ajslg != 'sidebars-lg'){
+                  $('.sidebars').removeClass('sidebars-lg', true)
+                    $('.sidebars').addClass('sidebars-lg', true)
+                    sessionStorage.ajslg = 'sidebars-lg'
+                }else{
+                    $('.sidebars').removeClass('sidebars-lg', false)
+                    sessionStorage.ajslg = ''
+                }
+                if(sessionStorage.ajcwlg != 'content-warper-lg'){
+                  $('.content-warper').removeClass('content-warper-lg', true)
+                    $('.content-warper').addClass('content-warper-lg', true)
+                    sessionStorage.ajcwlg = 'content-warper-lg'
+                }else{
+                    $('.content-warper').removeClass('content-warper-lg', false)
+                    sessionStorage.ajcwlg = ''
+                }
+                if(sessionStorage.ajfoot != 'main-footer-lg'){
+                  $('.main-footer').removeClass('main-footer-lg', true)
+                    $('.main-footer').addClass('main-footer-lg', true)
+                    sessionStorage.ajfoot = 'main-footer-lg'
+                }else{
+                    $('.main-footer').removeClass('main-footer-lg', false)
+                    sessionStorage.ajfoot = ''
+                }
+                // $('.sidebars').toggleClass('sidebars-lg')
+                //$('.content-warper').toggleClass('content-warper-lg')
+                //$('.main-footer').toggleClass('main-footer-lg')
+                $('.side-nav-togg').toggleClass('arrows-left')
+                $('.sidebars').addClass('sidebars-hover');
+                $('.sidebars nav ul li a p').show();
+                
+            });
+            $('.sidebars').hover(function(){
+                $('.sidebars nav ul li a i').removeClass('spinner-grow');
+               if( $('.sidebars').hasClass('sidebars-lg') || $('.sidebars').hasClass('sidebars-hover')){
+                $('.sidebars-hover').removeClass('sidebars-hover')
+                
+               }
+               else{
+                $('.sidebars').addClass('sidebars-hover');
+                $('.sidebars nav ul li a i').toggleClass('spinner-grow');
+               }
+            })
+            $('.side-nav-togg-top').click(function(){
+                $('.sidebars').toggleClass('sidebars-lg')
+                $('.content-warper').toggleClass('content-warper-lg')
+            });
+            $('.s_m').click(function(){
+                $('.sidebars').toggleClass('sidebars-lg')
+                $('.content-warper').toggleClass('content-warper-lg')
+            })
+        })
+    </script>
+     <script>
+        jQuery(function () {
+            initChangeStyleSheet();
+        });
+
+        function initChangeStyleSheet() {
+            var folder_path = 'assets/css/theme-color/';
+            var selector = 'head link[href$="color.css"]';
+            var color = sessionStorage.getItem('ajwebskin');
+
+
+            if (color == null) {
+                selector = 'head link[href$="color.css"]';
+            }
+            else {
+                $(selector).attr('href', folder_path +  color );
+            }
+            $('.default-color').click(function () {
+                $(selector).attr('href', folder_path + 'color.css');
+                sessionStorage.setItem('ajwebskin', 'color.css');
+            });
+            $('.black-color').click(function () {
+                $(selector).attr('href', folder_path + 'black-color.css');
+                sessionStorage.setItem('ajwebskin', 'black-color.css');
+            });
+            $('.red-color').click(function () {
+                $(selector).attr('href', folder_path + 'red-color.css');
+                sessionStorage.setItem('ajwebskin', 'red-color.css');
+            });
+            $('.pink-color').click(function(){
+                $(selector).attr('href', folder_path + 'pink-color.css');
+                sessionStorage.setItem('ajwebskin', 'pink-color.css')
+            })
+            $('.orange-color').click(function () {
+                $(selector).attr('href', folder_path + 'orange-color.css');
+                sessionStorage.setItem('ajwebskin', 'orange-color.css');
+            });
+            $('.bluegreen-color').click(function () {
+                $(selector).attr('href', folder_path + 'bluegreen-color.css');
+                sessionStorage.setItem('ajwebskin', 'bluegreen-color.css');
+
+            });
+            $('.navyblue-color').click(function () {
+                $(selector).attr('href', folder_path + 'navyblue-color.css');
+                sessionStorage.setItem('ajwebskin', 'navyblue-color.css');
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // jQuery(function ($){
+                                    
+                $(".sidebars nav ul a")
+                    .click(function (e) {
+                        var link = $(this);
+
+                        var item = link.parent("li");
+
+                        if (item.hasClass("active")) {
+                            item.addClass("active").children("a").removeClass("active");
+                        } else {
+                            item.addClass("active").children("a").addClass("active");
+                        }
+
+                        if (item.children("ul").length > 0) {
+                            var href = link.attr("href");
+                            link.attr("href", "#");
+                            setTimeout(function () {
+                                link.attr("href", href);
+                            }, 300);
+                            e.preventDefault();
+                        }
+                    })
+                    .each(function () {
+                        var link = $(this);
+                        if (link.get(0).href === location.href) {
+                            link.addClass("active").parents("li").addClass("active");
+                            return false;
+                        }
+                    });
+            });
+    </script>
+
+    <script type="text/javascript">
+      
+$(document).ready(function() {
+    $(window).on("contextmenu",function(e){
+       return false;
+    }); 
+}); 
+ document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+            case 87://Block Ctrl+W --Not work in Chrome
+            case 73://Block Ctrl+I
+            case 67: //Block Ctrl+C
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+
+      document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+    </script>
+</body>
+</html>

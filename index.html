@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/sites_styles.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <title>AWS</title>
+    <link rel="icon" href="assets/images/site_logo.png">
+</head>
+<body class="login-body-bg">
+    <div class="container" style="height: 100vh;">
+	
+        <div class="row h-100">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 offset-xxl-6 offset-xl-6 offset-lg-6 offset-md-4 offset-sm-0 align-self-center">
+			<form  class="was-validated" action="dashboard.html">
+                <div class="card-new text-center">
+                    <img src="assets/images/site_logo.png" style="height: 75px;">
+                    <!-- <hr> -->
+                    <!-- <h5 class="text-start1 mt-3">Login to AWS (MIS)</h5> -->
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <label for="email">Email</label>
+                      </div>
+                      
+                      <div class="form-floating mt-3 mb-3">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <label for="pwd">Password</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="remember">Remember me 
+                        </label>
+                      </div>
+					  <button class="btn btn-primary" type="submit">Submit <i class="fa-solid fa-arrow-right-long"></i></button>
+                      <!-- <a href="dashboard.html" class="btn btn-primary rounded-5">Submit <i class="fa-solid fa-arrow-right-long"></i></a> -->
+                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid d-flex justify-content-end align-items-center" style="height:100vh; overflow:hidden;">
+
+        <div class="row text-center d-flex align-items-center w-100">
+        
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 offset-xxl-6 offset-xl-6 offset-lg-6 offset-md-4 offset-sm-0">
+            <div class="card">sx</div>
+        </div>
+        
+        </div> 
+        </div> -->
+   <!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 offset-xxl-6 offset-xl-6 offset-lg-6 offset-md-4 offset-sm-0">
+            <div class="card">sx</div>
+        </div>
+    </div>
+   </div> -->
+    <!-- JAI MAA  -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript">
+      
+        $(document).ready(function() {
+            $(window).on("contextmenu",function(e){
+               return false;
+            }); 
+        }); 
+         document.onkeydown = function (e) {
+            e = e || window.event;//Get event
+            if (e.ctrlKey) {
+                var c = e.which || e.keyCode;//Get key code
+                switch (c) {
+                    case 83://Block Ctrl+S
+                    case 87://Block Ctrl+W --Not work in Chrome
+                    case 73://Block Ctrl+I
+                    case 67: //Block Ctrl+C
+                        e.preventDefault();     
+                        e.stopPropagation();
+                    break;
+                }
+            }
+        };
+        
+              document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+        }
+        }
+            </script>
+</body>
+</html>
